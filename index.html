@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gift Genie — Save Gift Ideas. Never Forget.</title>
+  <meta name="description" content="Gift Genie helps you save gift ideas, notes, and important dates—then reminds you at the right time and suggests last-minute gifts." />
+  <meta property="og:title" content="Gift Genie" />
+  <meta property="og:description" content="Save gift ideas, notes, and important dates—get reminders and last-minute gift suggestions." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#5B5EF7" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Optional: clean, modern font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top">
+        <span class="brand__mark" aria-hidden="true">🧞</span>
+        <span class="brand__name">Gift Genie</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#screenshots">Screens</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a class="btn btn--hero-waitlist btn--small" href="#waitlist">Join waitlist</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <div class="pill">
+            <span class="dot" aria-hidden="true"></span>
+            iOS app — coming soon
+          </div>
+
+          <h1>Never forget a gift again.</h1>
+          <p class="lead">
+            Gift Genie helps you save gift ideas, notes, and important dates for the people you care about —
+            then reminds you at the right time and suggests last-minute options when you need them.
+          </p>
+
+          <div class="hero__cta" id="download">
+            <a class="btn btn--hero-waitlist" href="#waitlist">Join the waitlist</a>
+            <!-- Replace href with your App Store URL later -->
+            <a class="btn btn--primary btn--coming-soon" href="#" aria-disabled="true" title="Add your App Store link later">
+              Download on the App Store
+              <span class="btn__sub">Coming soon</span>
+            </a>
+          </div>
+
+          <ul class="trust">
+            <li><strong>Quick capture</strong> gift ideas in seconds</li>
+            <li><strong>Smart reminders</strong> for birthdays & holidays</li>
+            <li><strong>Notes that matter</strong> sizes, favorites, links</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <div class="phone-wrap">
+            <div class="phone">
+              <!-- Replace the image below with your actual screenshot -->
+              <img
+                src="assets/screen-hero.png"
+                alt="Gift Genie home screen: Welcome, quick links to Important dates, People you gift, My profile, and Generate the perfect gift"
+                onerror="this.style.display='none'; this.parentElement.classList.add('phone--placeholder');"
+              />
+              <div class="phone__placeholder">
+                <div class="phone__glow" aria-hidden="true"></div>
+                <p><strong>Add your hero screenshot</strong><br/>assets/screen-hero.png</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sparkles" aria-hidden="true">
+            <span>✨</span><span>✨</span><span>✨</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section__head">
+          <h2>Built for real life gifting</h2>
+          <p>Capture ideas when they pop up. Stay organized. Show up thoughtful every time.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🎁</div>
+            <h3>Gift lists by person</h3>
+            <p>Save ideas for each person with links, price notes, and "don't buy" reminders.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🗓️</div>
+            <h3>Important dates</h3>
+            <p>Track birthdays, holidays, anniversaries, and custom events in one place.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🔔</div>
+            <h3>Smart reminders</h3>
+            <p>Get nudges early enough to shop — plus last-minute suggestions when time runs out.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">📝</div>
+            <h3>Notes that matter</h3>
+            <p>Sizes, favorite brands, wishlists, hobbies, inside jokes — store what makes it personal.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">⚡</div>
+            <h3>Fast capture</h3>
+            <p>Add an idea in under 10 seconds — the moment you hear it, see it, or think of it.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🧞‍♂️</div>
+            <h3>Genie suggestions</h3>
+            <p>When you're stuck, Gift Genie helps spark options based on the person and occasion.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="section section--alt" id="screenshots">
+      <div class="container">
+        <div class="section__head">
+          <h2>Simple, clean, and fast</h2>
+          <p>See Gift Genie in action — from picking who you’re gifting to getting personalized ideas.</p>
+        </div>
+
+        <div class="shots">
+          <figure class="shot">
+            <img src="assets/screen-1.png" alt="Choose a recipient from People you gift or add someone new" onerror="this.style.display='none'; this.parentElement.classList.add('shot--placeholder');">
+            <figcaption class="shot__cap">People + gift lists</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <img src="assets/screen-2.png" alt="Important dates: birthdays, holidays, and reminders" onerror="this.style.display='none'; this.parentElement.classList.add('shot--placeholder');">
+            <figcaption class="shot__cap">Important dates</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <img src="assets/screen-3.png" alt="Gift detail with product info, price, and Buy on Amazon" onerror="this.style.display='none'; this.parentElement.classList.add('shot--placeholder');">
+            <figcaption class="shot__cap">Gift details + notes</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <img src="assets/screen-4.png" alt="Genie suggestions tailored to occasion and budget" onerror="this.style.display='none'; this.parentElement.classList.add('shot--placeholder');">
+            <figcaption class="shot__cap">Genie suggestions</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section class="section waitlist-section" id="waitlist">
+      <div class="container waitlist">
+        <div class="waitlist__card">
+          <div class="waitlist__copy">
+            <span class="waitlist__badge">Be first</span>
+            <h2>Get notified the day we launch</h2>
+            <p>
+              Skip the line. We’ll email you as soon as Gift Genie hits the App Store — plus early perks for waitlist members.
+            </p>
+            <ul class="waitlist__benefits">
+              <li>One email when we launch, nothing more</li>
+              <li>Early-access perks for waitlist members</li>
+            </ul>
+          </div>
+
+          <form class="form waitlist__form" action="https://formspree.io/f/xbdoepdg" method="POST">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required />
+            <button class="btn btn--primary btn--waitlist" type="submit">Notify me when it’s live</button>
+            <p class="form__fineprint">
+              No spam. Unsubscribe anytime.
+            </p>
+          </form>
+        </div>
+
+        <p class="fineprint">
+          We'll only email you when Gift Genie launches. No spam — unsubscribe anytime.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <h2>FAQ</h2>
+          <p>Quick answers. Easy start.</p>
+        </div>
+
+        <div class="faq">
+          <details class="faq__item">
+            <summary>Is Gift Genie free?</summary>
+            <p>
+              Gift Genie will have a free tier with optional upgrades for power features (like advanced reminders and
+              premium suggestions).
+            </p>
+          </details>
+
+          <details class="faq__item">
+            <summary>When will it be available on the App Store?</summary>
+            <p>
+              Soon — we're finishing iOS development now. Join the waitlist to get notified the moment it's live.
+            </p>
+          </details>
+
+          <details class="faq__item">
+            <summary>Can I save links from Amazon or other stores?</summary>
+            <p>
+              Yes — you can favorite and save ideas to come back to later.
+            </p>
+          </details>
+
+          <details class="faq__item">
+            <summary>Do you send reminders for birthdays and holidays?</summary>
+            <p>
+              Yep. Add important dates and Gift Genie will remind you ahead of time — with last-minute help if needed.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section cta">
+      <div class="container cta__inner">
+        <div>
+          <h2>Show up thoughtful — effortlessly.</h2>
+          <p>Get Gift Genie on iPhone when it launches.</p>
+        </div>
+
+        <div class="cta__buttons">
+          <a class="btn btn--hero-waitlist" href="#waitlist">Join the waitlist</a>
+          <a class="btn btn--primary btn--coming-soon" href="#" aria-disabled="true" title="Add your App Store link later">
+            Download on the App Store
+            <span class="btn__sub">Coming soon</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark" aria-hidden="true">🧞</span>
+        <span><strong>Gift Genie</strong> — gifting made easy.</span>
+      </div>
+
+      <div class="footer__links">
+        <a href="#features">Features</a>
+        <a href="#screenshots">Screens</a>
+        <a href="#faq">FAQ</a>
+        <a href="#top">Back to top</a>
+      </div>
+
+      <div class="footer__legal">
+        <span>© <span id="year"></span> Gift Genie</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
