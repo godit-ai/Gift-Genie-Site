@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Gift Genie</title>
+  <meta name="description" content="Get in touch with the Gift Genie team. We'd love to hear your questions, feedback, or partnership inquiries." />
+  <meta property="og:title" content="Contact — Gift Genie" />
+  <meta property="og:description" content="Reach the Gift Genie team with questions, feedback, or partnership inquiries." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#5B5EF7" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">🧞</span>
+        <span class="brand__name">Gift Genie</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#features">Features</a>
+        <a href="guides/">Guides</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <a class="btn btn--hero-waitlist btn--small" href="index.html#waitlist">Join waitlist</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p class="page__subtitle">Have a question, suggestion, or just want to say hello? We'd love to hear from you.</p>
+
+      <div class="contact-info">
+        <h3>Email Us</h3>
+        <p>The fastest way to reach us is by email:</p>
+        <p><a href="mailto:support@giftgenie.info">support@giftgenie.info</a></p>
+      </div>
+
+      <h2>Send Us a Message</h2>
+      <p>Fill out the form below and it will open your email client with a pre-filled message. We typically respond within 1-2 business days.</p>
+
+      <form class="form" style="max-width:480px;" onsubmit="window.location.href='mailto:support@giftgenie.info?subject='+encodeURIComponent(document.getElementById('c-subject').value)+'&body='+encodeURIComponent('Name: '+document.getElementById('c-name').value+'\n\n'+document.getElementById('c-message').value);return false;">
+        <label class="sr-only" for="c-name">Your name</label>
+        <input id="c-name" type="text" placeholder="Your name" required />
+
+        <label class="sr-only" for="c-subject">Subject</label>
+        <input id="c-subject" type="text" placeholder="Subject" required />
+
+        <label class="sr-only" for="c-message">Message</label>
+        <textarea id="c-message" rows="5" placeholder="Your message" required style="width:100%;padding:12px 14px;border-radius:14px;border:1px solid rgba(255,255,255,0.14);background:rgba(0,0,0,0.25);color:var(--text);font-family:inherit;font-weight:600;resize:vertical;outline:none;"></textarea>
+
+        <button class="btn btn--primary" type="submit">Send Message</button>
+        <p class="form__fineprint">This will open your default email app with a pre-filled message.</p>
+      </form>
+
+      <h2>Other Ways to Reach Us</h2>
+      <ul>
+        <li><strong>General inquiries:</strong> <a href="mailto:support@giftgenie.info">support@giftgenie.info</a></li>
+        <li><strong>Partnership or business:</strong> <a href="mailto:support@giftgenie.info">support@giftgenie.info</a></li>
+        <li><strong>Press:</strong> <a href="mailto:support@giftgenie.info">support@giftgenie.info</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__row">
+        <div class="footer__brand">
+          <span class="brand__mark" aria-hidden="true">🧞</span>
+          <span><strong>Gift Genie</strong> — gifting made easy.</span>
+        </div>
+        <div class="footer__links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="guides/">Guides</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+          <a href="editorial-policy.html">Editorial Policy</a>
+        </div>
+        <div class="footer__legal">
+          <span>&copy; <span id="year"></span> Gift Genie</span>
+        </div>
+      </div>
+      <div class="footer__disclosure">
+        <p>Some links are paid affiliate links. We may earn a commission at no extra cost to you.</p>
+        <p id="amazon-disclosure" style="display:none;">As an Amazon Associate I earn from qualifying purchases.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function(){
+      var AFFILIATE_AMAZON_ENABLED = false;
+      var hasAmazonLinks = !!document.querySelector('a[href*="amazon.com"], a[href*="amzn.to"]');
+      if(AFFILIATE_AMAZON_ENABLED || hasAmazonLinks){
+        document.getElementById('amazon-disclosure').style.display = '';
+      }
+    })();
+  </script>
+</body>
+</html>

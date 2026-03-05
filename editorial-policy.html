@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Editorial Policy — Gift Genie</title>
+  <meta name="description" content="How Gift Genie chooses gift recommendations. Our editorial standards, research process, and commitment to honest content." />
+  <meta property="og:title" content="Editorial Policy — Gift Genie" />
+  <meta property="og:description" content="Our standards for gift recommendations and honest editorial content." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#5B5EF7" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">🧞</span>
+        <span class="brand__name">Gift Genie</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#features">Features</a>
+        <a href="guides/">Guides</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <a class="btn btn--hero-waitlist btn--small" href="index.html#waitlist">Join waitlist</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <h1>Editorial Policy</h1>
+      <p class="page__subtitle">How we research, select, and present gift ideas on Gift Genie.</p>
+
+      <h2>Our Editorial Standards</h2>
+      <p>Every gift recommendation on Gift Genie is chosen with care. We aim to suggest products and ideas that are genuinely useful, well-reviewed, and appropriate for the occasion and recipient. Our editorial team follows these principles:</p>
+      <ul>
+        <li><strong>Honesty first:</strong> We never recommend a product we wouldn't genuinely suggest to a friend or family member.</li>
+        <li><strong>No misleading claims:</strong> We don't exaggerate product benefits, fabricate reviews, or present sponsored content as independent editorial.</li>
+        <li><strong>Transparency:</strong> If content is sponsored or if a link is an affiliate link, we clearly disclose it.</li>
+      </ul>
+
+      <h2>How We Choose Gifts</h2>
+      <p>Our gift guides and recommendations are developed through a combination of:</p>
+      <ul>
+        <li><strong>Research:</strong> We review product ratings, customer feedback, expert reviews, and popularity trends across major retailers.</li>
+        <li><strong>Relevance:</strong> We consider the specific audience — who the gift is for, what occasion it suits, and what budget range makes sense.</li>
+        <li><strong>Quality and value:</strong> We prioritize items that offer good quality for the price, balancing premium options with budget-friendly picks.</li>
+        <li><strong>Variety:</strong> We include a range of categories and price points in each guide so there's something for everyone.</li>
+      </ul>
+
+      <h2>Affiliate Links and Compensation</h2>
+      <p>Some links on Gift Genie are affiliate links. This means we may earn a small commission if you click through and make a purchase. However:</p>
+      <ul>
+        <li>Affiliate commissions never influence which products we recommend or how we rank them.</li>
+        <li>We do not accept payment from brands to feature their products in our editorial guides unless clearly marked as "Sponsored."</li>
+        <li>Products are selected based on merit, not commission rates.</li>
+      </ul>
+      <p>For more details, see our <a href="affiliate-disclosure.html">Affiliate Disclosure</a>.</p>
+
+      <h2>Sponsored Content</h2>
+      <p>If any content on Gift Genie is sponsored (paid for by a brand or retailer), it will be clearly labeled as "Sponsored" at the top of the page or section. Sponsored content is held to the same editorial standards as our independent guides — we only accept sponsorships from brands we genuinely believe provide value to our audience.</p>
+
+      <h2>Corrections and Updates</h2>
+      <p>We strive for accuracy but acknowledge that product details, pricing, and availability change frequently. If you notice an error or outdated information, please let us know at <a href="mailto:support@giftgenie.info">support@giftgenie.info</a> and we'll update it promptly.</p>
+
+      <h2>Questions?</h2>
+      <p>If you have concerns about our editorial practices, reach out to us at <a href="mailto:support@giftgenie.info">support@giftgenie.info</a>. We take feedback seriously and are committed to maintaining your trust.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__row">
+        <div class="footer__brand">
+          <span class="brand__mark" aria-hidden="true">🧞</span>
+          <span><strong>Gift Genie</strong> — gifting made easy.</span>
+        </div>
+        <div class="footer__links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="guides/">Guides</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+          <a href="editorial-policy.html">Editorial Policy</a>
+        </div>
+        <div class="footer__legal">
+          <span>&copy; <span id="year"></span> Gift Genie</span>
+        </div>
+      </div>
+      <div class="footer__disclosure">
+        <p>Some links are paid affiliate links. We may earn a commission at no extra cost to you.</p>
+        <p id="amazon-disclosure" style="display:none;">As an Amazon Associate I earn from qualifying purchases.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function(){
+      var AFFILIATE_AMAZON_ENABLED = false;
+      var hasAmazonLinks = !!document.querySelector('a[href*="amazon.com"], a[href*="amzn.to"]');
+      if(AFFILIATE_AMAZON_ENABLED || hasAmazonLinks){
+        document.getElementById('amazon-disclosure').style.display = '';
+      }
+    })();
+  </script>
+</body>
+</html>

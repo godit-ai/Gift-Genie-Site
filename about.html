@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Gift Genie</title>
+  <meta name="description" content="Learn about Gift Genie, our mission, and how we help people find thoughtful gifts for every occasion." />
+  <meta property="og:title" content="About — Gift Genie" />
+  <meta property="og:description" content="Learn about Gift Genie and our mission to make gifting effortless." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#5B5EF7" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">🧞</span>
+        <span class="brand__name">Gift Genie</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#features">Features</a>
+        <a href="guides/">Guides</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <a class="btn btn--hero-waitlist btn--small" href="index.html#waitlist">Join waitlist</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <h1>About Gift Genie</h1>
+      <p class="page__subtitle">We believe the best gifts come from paying attention. Gift Genie helps you do exactly that.</p>
+
+      <h2>Our Mission</h2>
+      <p>Gift Genie was created out of a simple frustration: you hear someone mention something they love, and by the time their birthday rolls around, you've completely forgotten. We built Gift Genie to solve that problem — a simple app that lets you capture gift ideas the moment they come to you, organize them by person, and get reminded when it matters.</p>
+      <p>Our goal is to take the stress out of gift giving. We want every gift to feel personal, thoughtful, and on time — without the last-minute scramble.</p>
+
+      <h2>What We Do</h2>
+      <p>Gift Genie is an iOS app (coming soon) and website that helps you:</p>
+      <ul>
+        <li>Save gift ideas for the people you care about as soon as inspiration strikes</li>
+        <li>Organize ideas with notes, links, sizes, and price ranges</li>
+        <li>Track birthdays, holidays, anniversaries, and other important dates</li>
+        <li>Get smart reminders so you're never caught off guard</li>
+        <li>Browse curated gift guides when you need a little inspiration</li>
+      </ul>
+
+      <h2>Our Approach to Recommendations</h2>
+      <p>When we recommend products or link to retailers, we aim to be genuinely helpful. Our gift guides and suggestions are based on real research into what people actually enjoy receiving. We may earn a small commission from affiliate links (at no extra cost to you), which helps keep Gift Genie running. We always prioritize honest recommendations over affiliate revenue. Read our <a href="editorial-policy.html">Editorial Policy</a> and <a href="affiliate-disclosure.html">Affiliate Disclosure</a> for full details.</p>
+
+      <h2>Who We Are</h2>
+      <p>Gift Genie is a small, independent team passionate about making everyday life a little more thoughtful. We're based in the US and focused on building tools that help people show they care — one gift at a time.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__row">
+        <div class="footer__brand">
+          <span class="brand__mark" aria-hidden="true">🧞</span>
+          <span><strong>Gift Genie</strong> — gifting made easy.</span>
+        </div>
+        <div class="footer__links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="guides/">Guides</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+          <a href="editorial-policy.html">Editorial Policy</a>
+        </div>
+        <div class="footer__legal">
+          <span>&copy; <span id="year"></span> Gift Genie</span>
+        </div>
+      </div>
+      <div class="footer__disclosure">
+        <p>Some links are paid affiliate links. We may earn a commission at no extra cost to you.</p>
+        <p id="amazon-disclosure" style="display:none;">As an Amazon Associate I earn from qualifying purchases.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function(){
+      var AFFILIATE_AMAZON_ENABLED = false;
+      var hasAmazonLinks = !!document.querySelector('a[href*="amazon.com"], a[href*="amzn.to"]');
+      if(AFFILIATE_AMAZON_ENABLED || hasAmazonLinks){
+        document.getElementById('amazon-disclosure').style.display = '';
+      }
+    })();
+  </script>
+</body>
+</html>
