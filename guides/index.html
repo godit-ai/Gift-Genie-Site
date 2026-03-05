@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gift Guides — Gift Genie</title>
+  <meta name="description" content="Browse curated gift guides for every occasion — birthdays, holidays, anniversaries, and more. Find the perfect gift with Gift Genie." />
+  <meta property="og:title" content="Gift Guides — Gift Genie" />
+  <meta property="og:description" content="Curated gift guides for every occasion. Find the perfect gift." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#5B5EF7" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="../index.html">
+        <span class="brand__mark" aria-hidden="true">🧞</span>
+        <span class="brand__name">Gift Genie</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#features">Features</a>
+        <a href="./">Guides</a>
+        <a href="../index.html#faq">FAQ</a>
+      </nav>
+      <a class="btn btn--hero-waitlist btn--small" href="../index.html#waitlist">Join waitlist</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <h1>Gift Guides</h1>
+      <p class="page__subtitle">Need inspiration? Browse our curated gift guides — each one packed with thoughtful ideas for every budget and occasion.</p>
+
+      <div class="guides-grid">
+        <a href="gifts-for-him.html" class="guide-card">
+          <h3>Best Gifts for Him</h3>
+          <p>Practical, fun, and thoughtful gift ideas for boyfriends, husbands, dads, and brothers.</p>
+        </a>
+
+        <a href="gifts-for-her.html" class="guide-card">
+          <h3>Best Gifts for Her</h3>
+          <p>From self-care to tech, find the perfect gift for girlfriends, wives, moms, and sisters.</p>
+        </a>
+
+        <a href="gifts-under-50.html" class="guide-card">
+          <h3>Best Gifts Under $50</h3>
+          <p>Thoughtful gifts that won't break the bank. Great options across every category.</p>
+        </a>
+
+        <a href="birthday-gifts.html" class="guide-card">
+          <h3>Best Birthday Gifts</h3>
+          <p>Make their birthday special with gifts they'll actually love and use.</p>
+        </a>
+
+        <a href="gifts-for-couples.html" class="guide-card">
+          <h3>Best Gifts for Couples</h3>
+          <p>Shared experiences and duo-friendly gifts perfect for anniversaries and holidays.</p>
+        </a>
+
+        <a href="gifts-for-teens.html" class="guide-card">
+          <h3>Best Gifts for Teens</h3>
+          <p>Cool, trendy, and age-appropriate picks that teens will actually appreciate.</p>
+        </a>
+
+        <a href="gifts-for-parents.html" class="guide-card">
+          <h3>Best Gifts for Parents</h3>
+          <p>Show your parents you care with practical and meaningful gift ideas.</p>
+        </a>
+
+        <a href="last-minute-gifts.html" class="guide-card">
+          <h3>Best Last-Minute Gifts</h3>
+          <p>Running out of time? These gifts ship fast or can be delivered digitally.</p>
+        </a>
+
+        <a href="housewarming-gifts.html" class="guide-card">
+          <h3>Best Housewarming Gifts</h3>
+          <p>Welcome someone to their new home with useful and thoughtful gifts.</p>
+        </a>
+
+        <a href="holiday-gifts.html" class="guide-card">
+          <h3>Best Holiday Gifts</h3>
+          <p>Top picks for Christmas, Hanukkah, and the holiday season — for everyone on your list.</p>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__row">
+        <div class="footer__brand">
+          <span class="brand__mark" aria-hidden="true">🧞</span>
+          <span><strong>Gift Genie</strong> — gifting made easy.</span>
+        </div>
+        <div class="footer__links">
+          <a href="../about.html">About</a>
+          <a href="../contact.html">Contact</a>
+          <a href="./">Guides</a>
+          <a href="../privacy.html">Privacy</a>
+          <a href="../affiliate-disclosure.html">Affiliate Disclosure</a>
+          <a href="../editorial-policy.html">Editorial Policy</a>
+        </div>
+        <div class="footer__legal">
+          <span>&copy; <span id="year"></span> Gift Genie</span>
+        </div>
+      </div>
+      <div class="footer__disclosure">
+        <p>Some links are paid affiliate links. We may earn a commission at no extra cost to you.</p>
+        <p id="amazon-disclosure" style="display:none;">As an Amazon Associate I earn from qualifying purchases.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function(){
+      var AFFILIATE_AMAZON_ENABLED = false;
+      var hasAmazonLinks = !!document.querySelector('a[href*="amazon.com"], a[href*="amzn.to"]');
+      if(AFFILIATE_AMAZON_ENABLED || hasAmazonLinks){
+        document.getElementById('amazon-disclosure').style.display = '';
+      }
+    })();
+  </script>
+</body>
+</html>
