@@ -324,6 +324,20 @@ h1{
   max-width: 70ch;
 }
 
+/* About teaser (landing page) */
+.about-teaser{
+  max-width: 68ch;
+}
+.about-teaser p{
+  color: var(--muted);
+  font-weight: 500;
+  line-height: 1.65;
+  margin: 0 0 14px;
+}
+.about-teaser .btn{
+  margin-top: 6px;
+}
+
 /* Feature cards */
 .cards{
   display:grid;
